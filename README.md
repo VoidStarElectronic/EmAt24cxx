@@ -2,7 +2,7 @@
  Stm32 At24Cxx eeprom driver
 
 Example 1 :
-*simple
+* simple
 
 ```
 #include "main.h"
@@ -40,7 +40,7 @@ int main(void)
 ```
 
 Example 2 :
-*stopwatch enabled
+* stopwatch enabled
 
 ```
 #include "main.h"
@@ -102,8 +102,8 @@ Example 3 :
 
 void IWDG__reset(void)
 {
-	//TODO : reset watchdog
-	HAL_IWDG_Refresh(&hiwdg);
+    //TODO : reset watchdog
+    HAL_IWDG_Refresh(&hiwdg);
 }
 
 static const EmAt24cxx_t at24c32 =
