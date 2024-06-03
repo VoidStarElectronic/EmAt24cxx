@@ -2,7 +2,7 @@
  Stm32 At24Cxx eeprom driver
 
 Example 1 :
-
+'''
 #include "main.h"
 #include "EmAt24cxx.h"
 
@@ -20,7 +20,7 @@ int main(void)
     MX_GPIO_Init();
     MX_I2C1_Init();
     
-    
+
     const char wbuf[] = "this is Electronic Man";
     char rbuf[sizeof(wbuf)] = {0};
 
@@ -32,3 +32,4 @@ int main(void)
 
     while(1);
 }
+'''
