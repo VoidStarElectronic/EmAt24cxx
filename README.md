@@ -2,7 +2,7 @@
  Stm32 At24Cxx eeprom driver
 
 Example 1 :
-'''
+```
 #include "main.h"
 #include "EmAt24cxx.h"
 
@@ -32,4 +32,4 @@ int main(void)
 
     while(1);
 }
-'''
+```
