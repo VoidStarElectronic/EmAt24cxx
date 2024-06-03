@@ -2,6 +2,9 @@
  Stm32 At24Cxx eeprom driver
 
 Example 1 :
+
+simple
+
 ```
 #include "main.h"
 #include "gpio.h"
@@ -38,7 +41,9 @@ int main(void)
 ```
 
 Example 2 :
-    stopwatch enabled
+
+stopwatch enabled
+
 ```
 #include "main.h"
 #include "gpio.h"
