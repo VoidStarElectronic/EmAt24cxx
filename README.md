@@ -112,10 +112,10 @@ void IWDG__reset(void)
 
 static const EmAt24cxx_t at24c32 =
 {
-	.hi2c = &hi2c1,
-	.sizeKBit = 32,
-	.deviceAddress = 0xA0,
-	.iwdgReset = IWDG__reset,
+    .hi2c = &hi2c1,
+    .sizeKBit = 32,
+    .deviceAddress = 0xA0,
+    .iwdgReset = IWDG__reset,
     .wpGpio = WP_GPIO_Port,
     .wpPin = WP_Pin,
 };
