@@ -160,13 +160,13 @@ static const EmAt24cxx_t at24c16 =
 {
     .hi2c = &hi2c1,
     .sizeKBit = 16,
-    .deviceAddress = 0xA0,
+    .deviceAddress = 0xA1,
 };
 static const EmAt24cxx_t at24c32 =
 {
     .hi2c = &hi2c1,
     .sizeKBit = 32,
-    .deviceAddress = 0xA0,
+    .deviceAddress = 0xA2,
     .wpGpio = WP_GPIO_Port,
     .wpPin = WP_Pin,
 };
