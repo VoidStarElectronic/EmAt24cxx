@@ -70,6 +70,7 @@ int main(void)
     SystemClock_Config();
     MX_GPIO_Init();
     MX_I2C1_Init();
+    MX_IWDG_Init();
     
 
     const char wbuf[] = "this is Electronic Man";
@@ -122,7 +123,8 @@ int main(void)
     SystemClock_Config();
     MX_GPIO_Init();
     MX_I2C1_Init();
-    
+    MX_IWDG_Init();
+
 
     const char wbuf[] = "this is Electronic Man";
     char rbuf[sizeof(wbuf)] = {0};
