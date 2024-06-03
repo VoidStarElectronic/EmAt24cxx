@@ -71,7 +71,7 @@ int main(void)
     MX_GPIO_Init();
     MX_I2C1_Init();
     MX_IWDG_Init();
-    
+
 
     const char wbuf[] = "this is Electronic Man";
     char rbuf[sizeof(wbuf)] = {0};
@@ -154,20 +154,20 @@ Example 4 :
 
 static const EmAt24cxx_t at24c02 =
 {
-    .hi2c = &hi2c1,
+    .hi2c = &hi2c2,
     .sizeKBit = 2,
     .deviceAddress = 0xA0,
 };
-static const EmAt24cxx_t at24c16 =
+static const EmAt24cxx_t at24c32 =
 {
     .hi2c = &hi2c1,
     .sizeKBit = 16,
     .deviceAddress = 0xA1,
 };
-static const EmAt24cxx_t at24c32 =
+static const EmAt24cxx_t at24c64 =
 {
     .hi2c = &hi2c1,
-    .sizeKBit = 32,
+    .sizeKBit = 64,
     .deviceAddress = 0xA2,
     .wpGpio = WP_GPIO_Port,
     .wpPin = WP_Pin,
@@ -179,6 +179,7 @@ int main(void)
     SystemClock_Config();
     MX_GPIO_Init();
     MX_I2C1_Init();
+    MX_I2C2_Init();
     
     const char wbuf[] = "this is Electronic Man";
     char rbuf[sizeof(wbuf)] = {0};
@@ -189,16 +190,16 @@ int main(void)
         EmAt24cxx__read(&at24c02, 100, rbuf, sizeof(rbuf));
     }
    
-    if(EmAt24cxx__isReady(&at24c16))
-    {
-        EmAt24cxx__write(&at24c16, 100, wbuf, sizeof(wbuf));
-        EmAt24cxx__read(&at24c16, 100, rbuf, sizeof(rbuf));
-    }
-   
     if(EmAt24cxx__isReady(&at24c32))
     {
         EmAt24cxx__write(&at24c32, 100, wbuf, sizeof(wbuf));
         EmAt24cxx__read(&at24c32, 100, rbuf, sizeof(rbuf));
+    }
+   
+    if(EmAt24cxx__isReady(&at24c64))
+    {
+        EmAt24cxx__write(&at24c64, 100, wbuf, sizeof(wbuf));
+        EmAt24cxx__read(&at24c64, 100, rbuf, sizeof(rbuf));
     }
 
     while(1)
