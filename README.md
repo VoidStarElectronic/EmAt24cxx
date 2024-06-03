@@ -161,7 +161,7 @@ static const EmAt24cxx_t at24c02 =
 static const EmAt24cxx_t at24c32 =
 {
     .hi2c = &hi2c1,
-    .sizeKBit = 16,
+    .sizeKBit = 32,
     .deviceAddress = 0xA1,
 };
 static const EmAt24cxx_t at24c64 =
