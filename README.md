@@ -40,7 +40,7 @@ int main(void)
 ```
 
 Example 2 :
-* stopwatch enabled
+* watchdog enabled
 
 ```
 #include "main.h"
@@ -90,7 +90,7 @@ int main(void)
 ```
 
 Example 3 :
-* stopwatch enabled
+* watchdog enabled
 * wp pin used
 
 ```
@@ -143,7 +143,7 @@ int main(void)
 ```
 
 Example 4 :
-* use some eeprom device
+* use 3 eeprom devices
 
 ```
 #include "main.h"
