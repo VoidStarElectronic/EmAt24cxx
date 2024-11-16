@@ -42,7 +42,7 @@ int main(void)
 ### Example 2 :
 * watchdog enabled
 
-```
+```c
 #include "main.h"
 #include "gpio.h"
 #include "i2c.h"
@@ -93,7 +93,7 @@ int main(void)
 * watchdog enabled
 * wp pin used
 
-```
+```c
 #include "main.h"
 #include "gpio.h"
 #include "i2c.h"
@@ -145,7 +145,7 @@ int main(void)
 ### Example 4 :
 * use 3 eeprom devices
 
-```
+```c
 #include "main.h"
 #include "gpio.h"
 #include "i2c.h"
