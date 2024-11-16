@@ -1,10 +1,10 @@
 # EmAt24cxx
  Stm32 At24Cxx eeprom driver
 
-Example 1 :
+###Example 1 :
 * simple
 
-```
+```c
 #include "main.h"
 #include "gpio.h"
 #include "i2c.h"
@@ -39,7 +39,7 @@ int main(void)
 }
 ```
 
-Example 2 :
+###Example 2 :
 * watchdog enabled
 
 ```
@@ -89,7 +89,7 @@ int main(void)
 }
 ```
 
-Example 3 :
+###Example 3 :
 * watchdog enabled
 * wp pin used
 
@@ -142,7 +142,7 @@ int main(void)
 }
 ```
 
-Example 4 :
+###Example 4 :
 * use 3 eeprom devices
 
 ```
